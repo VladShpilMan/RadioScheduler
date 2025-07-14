@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioScheduler.Domain", "RadioScheduler.Domain\RadioScheduler.Domain.csproj", "{C1CE6500-008A-456C-BA60-0B9FE198887F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioScheduler.Application", "RadioScheduler.Application\RadioScheduler.Application.csproj", "{B9458D5F-BA13-4509-9F49-51B7E4927D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioScheduler.Infrastructure", "RadioScheduler.Infrastructure\RadioScheduler.Infrastructure.csproj", "{7B8EDBCA-2639-4E92-A0D7-BF35101C0D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioScheduler.Api", "RadioScheduler.Api\RadioScheduler.Api.csproj", "{42B4D609-7FC5-4C71-A05D-E6A0DFE112A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioScheduler.Tests", "RadioScheduler.Tests\RadioScheduler.Tests.csproj", "{A0C15B92-8229-468D-9590-40387333BA71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		Dockerfile.tests = Dockerfile.tests
+		Makefile = Makefile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1CE6500-008A-456C-BA60-0B9FE198887F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CE6500-008A-456C-BA60-0B9FE198887F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CE6500-008A-456C-BA60-0B9FE198887F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CE6500-008A-456C-BA60-0B9FE198887F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9458D5F-BA13-4509-9F49-51B7E4927D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9458D5F-BA13-4509-9F49-51B7E4927D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9458D5F-BA13-4509-9F49-51B7E4927D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9458D5F-BA13-4509-9F49-51B7E4927D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8EDBCA-2639-4E92-A0D7-BF35101C0D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8EDBCA-2639-4E92-A0D7-BF35101C0D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8EDBCA-2639-4E92-A0D7-BF35101C0D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8EDBCA-2639-4E92-A0D7-BF35101C0D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B4D609-7FC5-4C71-A05D-E6A0DFE112A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B4D609-7FC5-4C71-A05D-E6A0DFE112A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B4D609-7FC5-4C71-A05D-E6A0DFE112A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B4D609-7FC5-4C71-A05D-E6A0DFE112A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C15B92-8229-468D-9590-40387333BA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C15B92-8229-468D-9590-40387333BA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C15B92-8229-468D-9590-40387333BA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C15B92-8229-468D-9590-40387333BA71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1CF0487-5F53-41EF-A35A-9043CE7C1ECB}
+	EndGlobalSection
+EndGlobal

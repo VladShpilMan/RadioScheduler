@@ -1,0 +1,28 @@
+# .NET build artifacts
+bin/
+obj/
+
+# Configuration files
+appsettings.json
+appsettings.*.json
+
+# IDE and editors
+.vscode/
+.idea/
+*.suo
+*.user
+.vs/
+
+# Logs
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+
+# Miscellaneous
+.DS_Store
+
+error_logs.txt
+serilog_errors.txt
+docker-compose.yml
