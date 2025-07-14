@@ -21,14 +21,14 @@ Projekt jest oparty na Clean Architecture i składa się z czterech warstw:
 
 ## Konfiguracja
 
-Aplikacja używa pliku `appsettings.json` do konfiguracji logowania i Swaggera. Przykład zawartości:
+Aplikacja używa pliku `appsettings.json` do konfiguracji logowania i Swaggera. Plik trzeba stworzyć w projekcie *.Api:
 
 ```json
 {
   "AppLogging": {
     "LoggerType": "File",
     "FileLogger": {
-      "Path": "error_logs.txt"
+      "Path": "logs/error_logs.txt"
     }
   },
   "Logging": {
@@ -60,13 +60,13 @@ Aplikacja używa pliku `appsettings.json` do konfiguracji logowania i Swaggera. 
 }
 ```
 
-Upewnij się, że pliki `error_logs.txt` i `serilog_errors.txt` mają uprawnienia do zapisu w katalogu aplikacji.
+Upewnij się, że plik `error_logs.txt` ma uprawnienia do zapisu w katalogu aplikacji.
 
 ## Uruchomienie lokalne
 
 1. **Sklonuj repozytorium**:
    ```bash
-   git clone <adres-repozytorium>
+   git clone [<adres-repozytorium>](https://github.com/VladShpilMan/RadioScheduler)
    cd RadioScheduler
    ```
 
