@@ -1,6 +1,5 @@
 ﻿using RadioScheduler.Domain.Entities;
 using RadioScheduler.Infrastructure.Services;
-using System.Diagnostics;
 
 namespace RadioScheduler.Tests.Services
 {
@@ -13,14 +12,13 @@ namespace RadioScheduler.Tests.Services
             Show show = new Show("Poranny Program", "Jan Kowalski", new DateTime(2025, 7, 14, 8, 0, 0), 60);
             ConsoleNotificationService service = new ConsoleNotificationService();
             using StringWriter sw = new StringWriter();
-            var listener = new TextWriterTraceListener(sw);
-            Trace.Listeners.Add(listener);
+            TextWriter originalConsoleOut = Console.Out;
+            Console.SetOut(sw);
 
             try
             {
                 // Act
                 await service.NotifyShowCreatedAsync(show);
-                Trace.Flush();
 
                 // Assert
                 string output = sw.ToString().Trim();
@@ -32,7 +30,7 @@ namespace RadioScheduler.Tests.Services
             }
             finally
             {
-                Trace.Listeners.Remove(listener);
+                Console.SetOut(originalConsoleOut);
             }
         }
     }
