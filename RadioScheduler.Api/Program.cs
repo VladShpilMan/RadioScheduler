@@ -25,6 +25,13 @@ namespace RadioScheduler.Api
                 );
             });
 
+            var logPath = Path.Combine(Directory.GetCurrentDirectory(), "logs");
+            if (!Directory.Exists(logPath))
+            {
+                Directory.CreateDirectory(logPath);
+            }
+
+
             app.UseCors("AllowAll");
             app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseAuthorization();

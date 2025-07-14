@@ -8,7 +8,7 @@ namespace RadioScheduler.Infrastructure.Services
     {
         public async Task NotifyShowCreatedAsync(Show show)
         {
-            Debug.WriteLine($"Nowa audycja: {show.Title} o {show.StartTime} prowadzona przez: {show.Presenter}");
+            Console.WriteLine($"Nowa audycja: {show.Title} o {show.StartTime} prowadzona przez: {show.Presenter}");
             await Task.CompletedTask;
         }
     }
