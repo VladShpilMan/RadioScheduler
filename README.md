@@ -66,7 +66,7 @@ Upewnij się, że plik `error_logs.txt` ma uprawnienia do zapisu w katalogu apli
 
 1. **Sklonuj repozytorium**:
    ```bash
-   git clone [<adres-repozytorium>](https://github.com/VladShpilMan/RadioScheduler)
+   git clone https://github.com/VladShpilMan/RadioScheduler
    cd RadioScheduler
    ```
 
